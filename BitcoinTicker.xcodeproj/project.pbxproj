@@ -12,6 +12,7 @@
 		3ED059ED224C3D380098F8C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED059EB224C3D380098F8C2 /* Main.storyboard */; };
 		3ED059EF224C3D390098F8C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED059EE224C3D390098F8C2 /* Assets.xcassets */; };
 		3ED059F2224C3D390098F8C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED059F0224C3D390098F8C2 /* LaunchScreen.storyboard */; };
+		3ED059FE224CF2380098F8C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED059FD224CF2380098F8C2 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3ED059EE224C3D390098F8C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED059F1224C3D390098F8C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ED059F3224C3D390098F8C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED059FD224CF2380098F8C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		3ED059DB224C3D380098F8C2 = {
 			isa = PBXGroup;
 			children = (
+				3ED059FD224CF2380098F8C2 /* Default-568h@2x.png */,
 				3ED059E6224C3D380098F8C2 /* BitcoinTicker */,
 				3ED059E5224C3D380098F8C2 /* Products */,
 			);
@@ -54,14 +57,46 @@
 		3ED059E6224C3D380098F8C2 /* BitcoinTicker */ = {
 			isa = PBXGroup;
 			children = (
-				3ED059E7224C3D380098F8C2 /* AppDelegate.swift */,
-				3ED059E9224C3D380098F8C2 /* ViewController.swift */,
-				3ED059EB224C3D380098F8C2 /* Main.storyboard */,
+				3ED059FC224CB9DC0098F8C2 /* Model */,
+				3ED059FA224CB9200098F8C2 /* Controller */,
+				3ED059F9224CB9160098F8C2 /* View */,
 				3ED059EE224C3D390098F8C2 /* Assets.xcassets */,
-				3ED059F0224C3D390098F8C2 /* LaunchScreen.storyboard */,
-				3ED059F3224C3D390098F8C2 /* Info.plist */,
+				3ED059FB224CB92B0098F8C2 /* Supporting Files */,
 			);
 			path = BitcoinTicker;
+			sourceTree = "<group>";
+		};
+		3ED059F9224CB9160098F8C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3ED059EB224C3D380098F8C2 /* Main.storyboard */,
+				3ED059F0224C3D390098F8C2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3ED059FA224CB9200098F8C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3ED059E9224C3D380098F8C2 /* ViewController.swift */,
+				3ED059E7224C3D380098F8C2 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3ED059FB224CB92B0098F8C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ED059F3224C3D390098F8C2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ED059FC224CB9DC0098F8C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED059F2224C3D390098F8C2 /* LaunchScreen.storyboard in Resources */,
+				3ED059FE224CF2380098F8C2 /* Default-568h@2x.png in Resources */,
 				3ED059EF224C3D390098F8C2 /* Assets.xcassets in Resources */,
 				3ED059ED224C3D380098F8C2 /* Main.storyboard in Resources */,
 			);
@@ -284,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RFHSX882CC;
-				INFOPLIST_FILE = BitcoinTicker/Info.plist;
+				INFOPLIST_FILE = "BitcoinTicker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RFHSX882CC;
-				INFOPLIST_FILE = BitcoinTicker/Info.plist;
+				INFOPLIST_FILE = "BitcoinTicker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
